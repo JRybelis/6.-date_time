@@ -1,4 +1,6 @@
 import{tick} from "./clock.js";
+
+
 const now = new Date();
 const before = new Date('January 13 2005 7:00:00');
 
@@ -34,4 +36,9 @@ console.log(`I have been alive for ${days} extra days.`);
 const timestamp = 1615317675675;
 console.log(new Date(timestamp));
 
-//digital clock:
+//date library date fns:
+console.log(dateFns.isToday(now));
+
+console.log(dateFns.format(now, 'dddd, Do MMMM YYYY'));
+
+console.log(dateFns.distanceInWords(now, before, {addSuffix: true}));
