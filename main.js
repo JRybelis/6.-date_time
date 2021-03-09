@@ -1,3 +1,4 @@
+import{tick} from "./clock.js";
 const now = new Date();
 const before = new Date('January 13 2005 7:00:00');
 
@@ -32,3 +33,5 @@ console.log(`I have been alive for ${days} extra days.`);
 //converting timestamps into date objects
 const timestamp = 1615317675675;
 console.log(new Date(timestamp));
+
+//digital clock:
